@@ -1,65 +1,25 @@
+BUILD_DIR=$PWD/MUXSDKStats/xc
+PROJECT=$PWD/MUXSDKStats/MUXSDKStats.xcodeproj
+TARGET_DIR=$PWD/XCFramework
+
+
 # Delete the old stuff
-rm -Rf Frameworks
-# Make the target directories
-mkdir -p Frameworks/iOS/fat
-mkdir -p Frameworks/iOS/release
-mkdir -p Frameworks/iOS/simulator
-mkdir -p Frameworks/tvOS/fat
-mkdir -p Frameworks/tvOS/release
-mkdir -p Frameworks/tvOS/simulator
+rm -Rf $TARGET_DIR
 
-cd MUXSDKStats
+# Make the build directory
+mkdir -p $BUILD_DIR
+# Make the target directory
+mkdir -p $TARGET_DIR
 
-# Build tvOS release SDK
-xcodebuild -workspace 'MUXSDKStats.xcworkspace' -configuration Release archive -scheme 'MUXSDKStatsTv' SYMROOT=$PWD/tv
-# Build tvOS simulator SDK
-xcodebuild -workspace 'MUXSDKStats.xcworkspace' -configuration Release -scheme 'MUXSDKStatsTv' -destination 'platform=tvOS Simulator,name=Apple TV' SYMROOT=$PWD/tv
+################ Build MuxCore SDK
 
-# Prepare the release .framework
-cp -R -L tv/Release-appletvos/MUXSDKStatsTv.framework tv/MUXSDKStatsTv.framework
-cp -R tv/Release-appletvos/MUXSDKStatsTv.framework.dSYM tv/MUXSDKStatsTv.framework.dSYM
-TARGET_TV_BINARY=$PWD/tv/MUXSDKStatsTv.framework/MUXSDKStatsTv
-rm $TARGET_TV_BINARY
-
-# Make the tvOS fat binary
-lipo -create tv/Release-appletvos/MUXSDKStatsTv.framework/MUXSDKStatsTv tv/Release-appletvsimulator/MUXSDKStatsTv.framework/MUXSDKStatsTv -output $TARGET_TV_BINARY
-lipo -create tv/Release-appletvos/MUXSDKStatsTv.framework.dSYM/Contents/Resources/DWARF/MUXSDKStatsTv tv/Release-appletvsimulator/MUXSDKStatsTv.framework.dSYM/Contents/Resources/DWARF/MUXSDKStatsTv -output tv/MUXSDKStatsTv.framework.dSYM/Contents/Resources/DWARF/MUXSDKStatsTv
-
-
-# Build iOS release SDK
-xcodebuild -workspace 'MUXSDKStats.xcworkspace' -configuration Release archive -scheme 'MUXSDKStats' -sdk iphoneos SYMROOT=$PWD/ios
-# Build iOS simulator SDK
-xcodebuild -workspace 'MUXSDKStats.xcworkspace' -configuration Release -scheme 'MUXSDKStats' -destination 'platform=iOS Simulator,name=iPhone 8' SYMROOT=$PWD/ios
-
-# Prepare the release .framework
-cp -R -L ios/Release-iphoneos/MUXSDKStats.framework ios/MUXSDKStats.framework
-cp -R ios/Release-iphoneos/MUXSDKStats.framework.dSYM ios/MUXSDKStats.framework.dSYM
-TARGET_IOS_BINARY=$PWD/ios/MUXSDKStats.framework/MUXSDKStats
-rm $TARGET_IOS_BINARY
-
-# Make the iOS fat binary
-lipo -create ios/Release-iphoneos/MUXSDKStats.framework/MUXSDKStats ios/Release-iphonesimulator/MUXSDKStats.framework/MUXSDKStats -output $TARGET_IOS_BINARY
-lipo -create ios/Release-iphoneos/MUXSDKStats.framework.dSYM/Contents/Resources/DWARF/MUXSDKStats ios/Release-iphonesimulator/MUXSDKStats.framework.dSYM/Contents/Resources/DWARF/MUXSDKStats -output ios/MUXSDKStats.framework.dSYM/Contents/Resources/DWARF/MUXSDKStats
-
-cd ..
-
-# Copy over tvOS frameworks
-cp -R MUXSDKStats/tv/Release-appletvsimulator/MUXSDKStatsTv.framework Frameworks/tvOS/simulator/MUXSDKStatsTv.framework
-cp -R MUXSDKStats/tv/Release-appletvsimulator/MUXSDKStatsTv.framework.dSYM Frameworks/tvOS/simulator/MUXSDKStatsTv.framework.dSYM
-cp -R -L MUXSDKStats/tv/Release-appletvos/MUXSDKStatsTv.framework Frameworks/tvOS/release/MUXSDKStatsTv.framework
-cp -R MUXSDKStats/tv/Release-appletvos/MUXSDKStatsTv.framework.dSYM Frameworks/tvOS/release/MUXSDKStatsTv.framework.dSYM
-cp -R MUXSDKStats/tv/MUXSDKStatsTv.framework Frameworks/tvOS/fat/MUXSDKStatsTv.framework
-cp -R MUXSDKStats/tv/MUXSDKStatsTv.framework.dSYM Frameworks/tvOS/fat/MUXSDKStatsTv.framework.dSYM
-
-# Copy over iOS frameworks
-cp -R MUXSDKStats/ios/Release-iphonesimulator/MUXSDKStats.framework Frameworks/iOS/simulator/MUXSDKStats.framework
-cp -R MUXSDKStats/ios/Release-iphonesimulator/MUXSDKStats.framework.dSYM Frameworks/iOS/simulator/MUXSDKStats.framework.dSYM
-cp -R -L MUXSDKStats/ios/Release-iphoneos/MUXSDKStats.framework Frameworks/iOS/release/MUXSDKStats.framework
-cp -R MUXSDKStats/ios/Release-iphoneos/MUXSDKStats.framework.dSYM Frameworks/iOS/release/MUXSDKStats.framework.dSYM
-cp -R MUXSDKStats/ios/MUXSDKStats.framework Frameworks/iOS/fat/MUXSDKStats.framework
-cp -R MUXSDKStats/ios/MUXSDKStats.framework.dSYM Frameworks/iOS/fat/MUXSDKStats.framework.dSYM
-
-
-# Clean up
-rm -Rf MUXSDKStats/tv
-rm -Rf MUXSDKStats/ios
+xcodebuild archive -scheme MUXSDKStatsTv -project $PROJECT -destination "generic/platform=tvOS" -archivePath "$BUILD_DIR/MUXSDKStatsTv.tvOS.xcarchive" SKIP_INSTALL=NO BUILD_LIBRARY_FOR_DISTRIBUTION=YES
+xcodebuild archive -scheme MUXSDKStatsTv -project $PROJECT -destination "generic/platform=tvOS Simulator" -archivePath "$BUILD_DIR/MUXSDKStatsTv.tvOS-simulator.xcarchive" SKIP_INSTALL=NO BUILD_LIBRARY_FOR_DISTRIBUTION=YES
+xcodebuild archive -scheme MUXSDKStats -project $PROJECT  -destination "generic/platform=iOS" -archivePath "$BUILD_DIR/MUXSDKStats.iOS.xcarchive" SKIP_INSTALL=NO BUILD_LIBRARY_FOR_DISTRIBUTION=YES
+xcodebuild archive -scheme MUXSDKStats -project $PROJECT  -destination "generic/platform=iOS Simulator" -archivePath "$BUILD_DIR/MUXSDKStats.iOS-simulator.xcarchive" SKIP_INSTALL=NO BUILD_LIBRARY_FOR_DISTRIBUTION=YES
+xcodebuild archive -scheme MUXSDKStats -project $PROJECT  -destination "platform=macOS,variant=Mac Catalyst" -archivePath "$BUILD_DIR/MUXSDKStats.macOS.xcarchive" SKIP_INSTALL=NO BUILD_LIBRARY_FOR_DISTRIBUTION=YES
+xcodebuild -create-xcframework -framework "$BUILD_DIR/MUXSDKStatsTv.tvOS.xcarchive/Products/Library/Frameworks/MUXSDKStatsTv.framework" \
+                               -framework "$BUILD_DIR/MUXSDKStatsTv.tvOS-simulator.xcarchive/Products/Library/Frameworks/MUXSDKStatsTv.framework" \
+                               -framework "$BUILD_DIR/MUXSDKStats.iOS.xcarchive/Products/Library/Frameworks/MUXSDKStats.framework" \
+                               -framework "$BUILD_DIR/MUXSDKStats.iOS-simulator.xcarchive/Products/Library/Frameworks/MUXSDKStats.framework" \
+                               -framework "$BUILD_DIR/MUXSDKStats.macOS.xcarchive/Products/Library/Frameworks/MUXSDKStats.framework" \
