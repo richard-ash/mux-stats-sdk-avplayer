@@ -1,7 +1,7 @@
 #import "ViewController.h"
 
-@import MUXSDKStats;
-@import Mux_Stats_Google_IMA;
+@import MuxCore;
+//@import Mux_Stats_Google_IMA;
 
 static NSString *DEMO_PLAYER_NAME = @"demoplayer";
 
@@ -63,65 +63,65 @@ static NSString *DEMO_PLAYER_NAME = @"demoplayer";
 
 #pragma mark Orientation Changes
 
-- (void)viewWillTransitionToSize:(CGSize)size
-       withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator {
-    [coordinator animateAlongsideTransition:^(id<UIViewControllerTransitionCoordinatorContext> context) {} completion:^(id<UIViewControllerTransitionCoordinatorContext> context) {
-        [MUXSDKStats orientationChangeForPlayer:DEMO_PLAYER_NAME withOrientation:[self viewOrientationForSize:size]];
-
-    }];
-}
-
-- (MUXSDKViewOrientation) viewOrientationForSize:(CGSize)size {
-    return (size.width > size.height) ? MUXSDKViewOrientationLandscape : MUXSDKViewOrientationPortrait;
-}
+//- (void)viewWillTransitionToSize:(CGSize)size
+//       withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator {
+//    [coordinator animateAlongsideTransition:^(id<UIViewControllerTransitionCoordinatorContext> context) {} completion:^(id<UIViewControllerTransitionCoordinatorContext> context) {
+//        [MUXSDKStats orientationChangeForPlayer:DEMO_PLAYER_NAME withOrientation:[self viewOrientationForSize:size]];
+//
+//    }];
+//}
+//
+//- (MUXSDKViewOrientation) viewOrientationForSize:(CGSize)size {
+//    return (size.width > size.height) ? MUXSDKViewOrientationLandscape : MUXSDKViewOrientationPortrait;
+//}
 
 
 #pragma mark AdsManager Delegates
 
-- (void)adsManager:(IMAAdsManager *)adsManager didReceiveAdEvent:(IMAAdEvent *)event {
-    // When the SDK notified us that ads have been loaded, play them.
-    if (event.type == kIMAAdEvent_LOADED) {
-        [_adsManager start];
-    }
-    if (_imaListener != nil) {
-        [_imaListener dispatchEvent: event];
-    }
-}
-
-- (void)adsManager:(IMAAdsManager *)adsManager didReceiveAdError:(IMAAdError *)error {
-    [_avplayer play];
-    if (_imaListener != nil) {
-        [_imaListener dispatchError: error.message];
-    }
-}
-
-- (void)adsManagerDidRequestContentPause:(IMAAdsManager *)adsManager {
-    [_avplayer pause];
-    [_imaListener onContentPauseOrResume:true];
-}
-
-- (void)adsManagerDidRequestContentResume:(IMAAdsManager *)adsManager {
-    [_avplayer play];
-    [_imaListener onContentPauseOrResume:false];
-}
-
-- (AVPlayer *)testAVQueuePlayer {
-    AVPlayerItem *item1 = [AVPlayerItem playerItemWithURL:[NSURL URLWithString:@"https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8"]];
-    AVPlayerItem *item2 = [AVPlayerItem playerItemWithURL:[NSURL URLWithString:@"http://qthttp.apple.com.edgesuite.net/1010qwoeiuryfg/sl.m3u8"]];
-    AVQueuePlayer *player = [[AVQueuePlayer alloc] initWithItems:@[item1, item2]];
-    return player;
-}
+//- (void)adsManager:(IMAAdsManager *)adsManager didReceiveAdEvent:(IMAAdEvent *)event {
+//    // When the SDK notified us that ads have been loaded, play them.
+//    if (event.type == kIMAAdEvent_LOADED) {
+//        [_adsManager start];
+//    }
+//    if (_imaListener != nil) {
+//        [_imaListener dispatchEvent: event];
+//    }
+//}
+//
+//- (void)adsManager:(IMAAdsManager *)adsManager didReceiveAdError:(IMAAdError *)error {
+//    [_avplayer play];
+//    if (_imaListener != nil) {
+//        [_imaListener dispatchError: error.message];
+//    }
+//}
+//
+//- (void)adsManagerDidRequestContentPause:(IMAAdsManager *)adsManager {
+//    [_avplayer pause];
+//    [_imaListener onContentPauseOrResume:true];
+//}
+//
+//- (void)adsManagerDidRequestContentResume:(IMAAdsManager *)adsManager {
+//    [_avplayer play];
+//    [_imaListener onContentPauseOrResume:false];
+//}
+//
+//- (AVPlayer *)testAVQueuePlayer {
+//    AVPlayerItem *item1 = [AVPlayerItem playerItemWithURL:[NSURL URLWithString:@"https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8"]];
+//    AVPlayerItem *item2 = [AVPlayerItem playerItemWithURL:[NSURL URLWithString:@"http://qthttp.apple.com.edgesuite.net/1010qwoeiuryfg/sl.m3u8"]];
+//    AVQueuePlayer *player = [[AVQueuePlayer alloc] initWithItems:@[item1, item2]];
+//    return player;
+//}
 
 - (AVPlayer *)testAVPlayer {
     NSURL* videoURL = [NSURL URLWithString:@"http://qthttp.apple.com.edgesuite.net/1010qwoeiuryfg/sl.m3u8"];
     AVPlayer *player = [AVPlayer playerWithURL:videoURL];
     
-    // After 20 seconds, we'll change the video.
-    _videoChangeTimer = [NSTimer scheduledTimerWithTimeInterval:20.0
-                                                         target:self
-                                                       selector:@selector(changeVideo:)
-                                                       userInfo:nil
-                                                        repeats:NO];
+//    // After 20 seconds, we'll change the video.
+//    _videoChangeTimer = [NSTimer scheduledTimerWithTimeInterval:20.0
+//                                                         target:self
+//                                                       selector:@selector(changeVideo:)
+//                                                       userInfo:nil
+//                                                        repeats:NO];
 
 //    // After 20 seconds, we'll change the program
 //    _videoChangeTimer = [NSTimer scheduledTimerWithTimeInterval:20.0
@@ -135,44 +135,44 @@ static NSString *DEMO_PLAYER_NAME = @"demoplayer";
 - (void)setupAVPlayerViewController:(AVPlayer *)player {
     _avplayer = player;
     _avplayerController.player = _avplayer;
-
-    // TODO: Add your property key!
+//
+//    // TODO: Add your property key!
     MUXSDKCustomerPlayerData *playerData = [[MUXSDKCustomerPlayerData alloc] initWithPropertyKey:@"YOUR_ENV_KEY_HERE"];
     MUXSDKCustomerVideoData *videoData = [MUXSDKCustomerVideoData new];
     videoData.videoTitle = @"Big Buck Bunny";
     videoData.videoId = @"bigbuckbunny";
     videoData.videoSeries = @"animation";
-    _playerBinding = [MUXSDKStats monitorAVPlayerViewController:_avplayerController
-                                withPlayerName:DEMO_PLAYER_NAME
-                                    playerData:playerData
-                                     videoData:videoData];
-    _imaListener = [[MuxImaListener alloc] initWithPlayerBinding:_playerBinding];
-    [_avplayer play];
-
+//    _playerBinding = [MUXSDKStats monitorAVPlayerViewController:_avplayerController
+//                                withPlayerName:DEMO_PLAYER_NAME
+//                                    playerData:playerData
+//                                     videoData:videoData];
+//    _imaListener = [[MuxImaListener alloc] initWithPlayerBinding:_playerBinding];
+//    [_avplayer play];
+//
     [self addChildViewController:_avplayerController];
     [self.view addSubview:_avplayerController.view];
     _avplayerController.view.frame = self.view.frame;
 }
+//
+//- (void)changeVideo:(NSTimer *)timer {
+//    MUXSDKCustomerVideoData *videoData = [MUXSDKCustomerVideoData new];
+//    videoData.videoTitle = @"Apple Keynote";
+//    videoData.videoId = @"applekeynote2010";
+//    [MUXSDKStats videoChangeForPlayer:DEMO_PLAYER_NAME
+//                        withVideoData:videoData];
+//    NSURL* videoURL = [NSURL URLWithString:@"http://qthttp.apple.com.edgesuite.net/1010qwoeiuryfg/sl.m3u8"];
+//    AVPlayerItem *keynote = [AVPlayerItem playerItemWithURL:videoURL];
+//    [_avplayer replaceCurrentItemWithPlayerItem:keynote];
+//    [_avplayer play];
+//}
 
-- (void)changeVideo:(NSTimer *)timer {
-    MUXSDKCustomerVideoData *videoData = [MUXSDKCustomerVideoData new];
-    videoData.videoTitle = @"Apple Keynote";
-    videoData.videoId = @"applekeynote2010";
-    [MUXSDKStats videoChangeForPlayer:DEMO_PLAYER_NAME
-                        withVideoData:videoData];
-    NSURL* videoURL = [NSURL URLWithString:@"http://qthttp.apple.com.edgesuite.net/1010qwoeiuryfg/sl.m3u8"];
-    AVPlayerItem *keynote = [AVPlayerItem playerItemWithURL:videoURL];
-    [_avplayer replaceCurrentItemWithPlayerItem:keynote];
-    [_avplayer play];
-}
-
-- (void)changeProgram:(NSTimer *)timer {
-    MUXSDKCustomerVideoData *videoData = [MUXSDKCustomerVideoData new];
-    videoData.videoTitle = @"Apple Keynote";
-    videoData.videoId = @"applekeynote2010";
-    [MUXSDKStats programChangeForPlayer:DEMO_PLAYER_NAME
-                        withVideoData:videoData];
-}
+//- (void)changeProgram:(NSTimer *)timer {
+//    MUXSDKCustomerVideoData *videoData = [MUXSDKCustomerVideoData new];
+//    videoData.videoTitle = @"Apple Keynote";
+//    videoData.videoId = @"applekeynote2010";
+//    [MUXSDKStats programChangeForPlayer:DEMO_PLAYER_NAME
+//                        withVideoData:videoData];
+//}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

@@ -1,0 +1,495 @@
+BCSymbolMap Version: 2.0
+Apple clang version 12.0.0 (clang-1200.0.32.2)
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk
+iPhoneOS14.0.sdk
+/Users/dylanjhaveri/Library/Developer/Xcode/DerivedData/MUXSDKStats-dhfokmhwzajqgxaofuqzhkpkaeyb/Build/Intermediates.noindex/ArchiveIntermediates/MUXSDKStats/IntermediateBuildFilesPath/MUXSDKStats.build/Release-iphoneos/MUXSDKStats.build/DerivedSources/MUXSDKStats_vers.c
+/Users/dylanjhaveri/code/@muxinc/mux-stats-sdk-avplayer/MUXSDKStats
+-[MUXSDKCustomerPlayerDataStore init]
+-[MUXSDKCustomerPlayerDataStore setPlayerData:forPlayerName:]
+-[MUXSDKCustomerPlayerDataStore playerDataForPlayerName:]
+-[MUXSDKCustomerPlayerDataStore store]
+-[MUXSDKCustomerPlayerDataStore setStore:]
+-[MUXSDKCustomerPlayerDataStore .cxx_destruct]
+_OBJC_SELECTOR_REFERENCES_
+_OBJC_CLASSLIST_REFERENCES_$_
+_OBJC_SELECTOR_REFERENCES_.2
+_OBJC_SELECTOR_REFERENCES_.4
+_OBJC_SELECTOR_REFERENCES_.6
+_OBJC_SELECTOR_REFERENCES_.8
+__OBJC_$_PROTOCOL_INSTANCE_METHODS_MUXSDKCustomerPlayerDataStoring
+__OBJC_$_PROTOCOL_METHOD_TYPES_MUXSDKCustomerPlayerDataStoring
+__OBJC_PROTOCOL_$_MUXSDKCustomerPlayerDataStoring
+__OBJC_LABEL_PROTOCOL_$_MUXSDKCustomerPlayerDataStoring
+__OBJC_CLASS_PROTOCOLS_$_MUXSDKCustomerPlayerDataStore
+__OBJC_METACLASS_RO_$_MUXSDKCustomerPlayerDataStore
+__OBJC_$_INSTANCE_METHODS_MUXSDKCustomerPlayerDataStore
+_OBJC_IVAR_$_MUXSDKCustomerPlayerDataStore._store
+__OBJC_$_INSTANCE_VARIABLES_MUXSDKCustomerPlayerDataStore
+__OBJC_$_PROP_LIST_MUXSDKCustomerPlayerDataStore
+__OBJC_CLASS_RO_$_MUXSDKCustomerPlayerDataStore
+/Users/dylanjhaveri/code/@muxinc/mux-stats-sdk-avplayer/MUXSDKStats/MUXSDKStats/MUXSDKCustomerPlayerDataStore.m
+MUXSDKStats/MUXSDKCustomerPlayerDataStore.m
+-[MUXSDKPlayerBindingManager init]
+-[MUXSDKPlayerBindingManager onPlayerDestroyed:]
+-[MUXSDKPlayerBindingManager hasInitializedPlayerBinding:]
+-[MUXSDKPlayerBindingManager newViewForPlayer:]
+-[MUXSDKPlayerBindingManager dispatchDataEventForPlayerName:playerData:videoData:videoChange:]
+-[MUXSDKPlayerBindingManager playbackStartedForPlayer:]
+-[MUXSDKPlayerBindingManager videoChangedForPlayer:]
+-[MUXSDKPlayerBindingManager customerPlayerDataStore]
+-[MUXSDKPlayerBindingManager setCustomerPlayerDataStore:]
+-[MUXSDKPlayerBindingManager customerVideoDataStore]
+-[MUXSDKPlayerBindingManager setCustomerVideoDataStore:]
+-[MUXSDKPlayerBindingManager viewControllers]
+-[MUXSDKPlayerBindingManager setViewControllers:]
+-[MUXSDKPlayerBindingManager playerReadyBindings]
+-[MUXSDKPlayerBindingManager setPlayerReadyBindings:]
+-[MUXSDKPlayerBindingManager .cxx_destruct]
+_OBJC_SELECTOR_REFERENCES_.10
+_OBJC_SELECTOR_REFERENCES_.12
+_OBJC_SELECTOR_REFERENCES_.14
+_OBJC_SELECTOR_REFERENCES_.16
+_OBJC_SELECTOR_REFERENCES_.18
+_OBJC_SELECTOR_REFERENCES_.20
+_OBJC_SELECTOR_REFERENCES_.22
+_OBJC_SELECTOR_REFERENCES_.24
+_OBJC_SELECTOR_REFERENCES_.26
+_OBJC_SELECTOR_REFERENCES_.28
+_OBJC_SELECTOR_REFERENCES_.30
+_OBJC_CLASSLIST_REFERENCES_$_.31
+_OBJC_SELECTOR_REFERENCES_.33
+_OBJC_SELECTOR_REFERENCES_.35
+_OBJC_SELECTOR_REFERENCES_.37
+_OBJC_CLASSLIST_REFERENCES_$_.38
+_OBJC_SELECTOR_REFERENCES_.40
+_OBJC_SELECTOR_REFERENCES_.42
+__OBJC_$_PROTOCOL_INSTANCE_METHODS_MUXSDKPlayDispatchDelegate
+__OBJC_$_PROTOCOL_METHOD_TYPES_MUXSDKPlayDispatchDelegate
+__OBJC_PROTOCOL_$_MUXSDKPlayDispatchDelegate
+__OBJC_LABEL_PROTOCOL_$_MUXSDKPlayDispatchDelegate
+__OBJC_CLASS_PROTOCOLS_$_MUXSDKPlayerBindingManager
+__OBJC_METACLASS_RO_$_MUXSDKPlayerBindingManager
+__OBJC_$_INSTANCE_METHODS_MUXSDKPlayerBindingManager
+_OBJC_IVAR_$_MUXSDKPlayerBindingManager._customerPlayerDataStore
+_OBJC_IVAR_$_MUXSDKPlayerBindingManager._customerVideoDataStore
+_OBJC_IVAR_$_MUXSDKPlayerBindingManager._viewControllers
+_OBJC_IVAR_$_MUXSDKPlayerBindingManager._playerReadyBindings
+__OBJC_$_INSTANCE_VARIABLES_MUXSDKPlayerBindingManager
+__OBJC_$_PROP_LIST_MUXSDKPlayerBindingManager
+__OBJC_CLASS_RO_$_MUXSDKPlayerBindingManager
+/Users/dylanjhaveri/code/@muxinc/mux-stats-sdk-avplayer/MUXSDKStats/MUXSDKStats/MUXSDKPlayerBindingManager.m
+MUXSDKStats/MUXSDKPlayerBindingManager.m
+MUXSDKStats/MUXSDKPlayerBindingManager.h
+-[MUXSDKCustomerVideoDataStore init]
+-[MUXSDKCustomerVideoDataStore setVideoData:forPlayerName:]
+-[MUXSDKCustomerVideoDataStore videoDataForPlayerName:]
+-[MUXSDKCustomerVideoDataStore store]
+-[MUXSDKCustomerVideoDataStore setStore:]
+-[MUXSDKCustomerVideoDataStore .cxx_destruct]
+__OBJC_$_PROTOCOL_INSTANCE_METHODS_MUXSDKCustomerVideoDataStoring
+__OBJC_$_PROTOCOL_METHOD_TYPES_MUXSDKCustomerVideoDataStoring
+__OBJC_PROTOCOL_$_MUXSDKCustomerVideoDataStoring
+__OBJC_LABEL_PROTOCOL_$_MUXSDKCustomerVideoDataStoring
+__OBJC_CLASS_PROTOCOLS_$_MUXSDKCustomerVideoDataStore
+__OBJC_METACLASS_RO_$_MUXSDKCustomerVideoDataStore
+__OBJC_$_INSTANCE_METHODS_MUXSDKCustomerVideoDataStore
+_OBJC_IVAR_$_MUXSDKCustomerVideoDataStore._store
+__OBJC_$_INSTANCE_VARIABLES_MUXSDKCustomerVideoDataStore
+__OBJC_$_PROP_LIST_MUXSDKCustomerVideoDataStore
+__OBJC_CLASS_RO_$_MUXSDKCustomerVideoDataStore
+/Users/dylanjhaveri/code/@muxinc/mux-stats-sdk-avplayer/MUXSDKStats/MUXSDKStats/MUXSDKCustomerVideoDataStore.m
+MUXSDKStats/MUXSDKCustomerVideoDataStore.m
+-[MUXSDKPlayerBinding initWithName:andSoftware:]
+-[MUXSDKPlayerBinding setAutomaticErrorTracking:]
+-[MUXSDKPlayerBinding attachAVPlayer:]
+___38-[MUXSDKPlayerBinding attachAVPlayer:]_block_invoke
+___copy_helper_block_e8_32w
+___destroy_helper_block_e8_32w
+-[MUXSDKPlayerBinding getHostName:]
+-[MUXSDKPlayerBinding checkIfNotificationIsRelevant:]
+-[MUXSDKPlayerBinding handleAVPlayerAccess:]
+___44-[MUXSDKPlayerBinding handleAVPlayerAccess:]_block_invoke
+___copy_helper_block_e8_32s40s
+___destroy_helper_block_e8_32s40s
+-[MUXSDKPlayerBinding handleRenditionChange:]
+-[MUXSDKPlayerBinding handleRenditionChangeInAccessLog:]
+-[MUXSDKPlayerBinding calculateBandwidthMetricFromAccessLog:]
+-[MUXSDKPlayerBinding handleAVPlayerError:]
+-[MUXSDKPlayerBinding timeUpdateTimer:]
+-[MUXSDKPlayerBinding dealloc]
+-[MUXSDKPlayerBinding safelyRemoveTimeObserverForPlayer]
+-[MUXSDKPlayerBinding safelyRemovePlayerObserverForKeyPath:]
+-[MUXSDKPlayerBinding safelyRemovePlayerItemObserverForKeyPath:]
+-[MUXSDKPlayerBinding detachAVPlayer]
+-[MUXSDKPlayerBinding monitorAVPlayerItem]
+-[MUXSDKPlayerBinding stopMonitoringAVPlayerItem]
+-[MUXSDKPlayerBinding programChangedForPlayer]
+-[MUXSDKPlayerBinding prepareForAvQueuePlayerNextItem]
+-[MUXSDKPlayerBinding getTimeObserverInternal]
+-[MUXSDKPlayerBinding getCurrentPlayheadTimeMs]
+-[MUXSDKPlayerBinding getVideoBounds]
+-[MUXSDKPlayerBinding getViewBounds]
+-[MUXSDKPlayerBinding getSourceDimensions]
+-[MUXSDKPlayerBinding resetVideoData]
+-[MUXSDKPlayerBinding checkVideoData]
+-[MUXSDKPlayerBinding getPlayerData]
+-[MUXSDKPlayerBinding buildError:domain:code:message:]
+-[MUXSDKPlayerBinding isPlayerOK]
+-[MUXSDKPlayerBinding isPlaying]
+-[MUXSDKPlayerBinding isBuffering]
+-[MUXSDKPlayerBinding isTryingToPlay]
+-[MUXSDKPlayerBinding isPlayingOrTryingToPlay]
+-[MUXSDKPlayerBinding startBuffering]
+-[MUXSDKPlayerBinding dispatchViewInit]
+-[MUXSDKPlayerBinding dispatchPlayerReady]
+-[MUXSDKPlayerBinding dispatchPlay]
+-[MUXSDKPlayerBinding dispatchPlaying]
+-[MUXSDKPlayerBinding dispatchPause]
+-[MUXSDKPlayerBinding dispatchTimeUpdateFromTimer]
+-[MUXSDKPlayerBinding dispatchTimeUpdateEvent:]
+-[MUXSDKPlayerBinding dispatchError]
+-[MUXSDKPlayerBinding dispatchError:withMessage:]
+-[MUXSDKPlayerBinding dispatchViewEnd]
+-[MUXSDKPlayerBinding dispatchBandwidthMetric:withType:]
+-[MUXSDKPlayerBinding dispatchOrientationChange:]
+-[MUXSDKPlayerBinding dispatchRenditionChange]
+-[MUXSDKPlayerBinding updateLastPlayheadTime]
+-[MUXSDKPlayerBinding computeDrift]
+-[MUXSDKPlayerBinding getPlayerState]
+-[MUXSDKPlayerBinding isPlayerInErrorState]
+-[MUXSDKPlayerBinding observeValueForKeyPath:ofObject:change:context:]
+-[MUXSDKPlayerBinding dispatchAdEvent:]
+-[MUXSDKPlayerBinding playDispatchDelegate]
+-[MUXSDKPlayerBinding setPlayDispatchDelegate:]
+-[MUXSDKPlayerBinding .cxx_destruct]
+-[MUXSDKAVPlayerViewControllerBinding initWithName:software:andView:]
+-[MUXSDKAVPlayerViewControllerBinding getVideoBounds]
+-[MUXSDKAVPlayerViewControllerBinding getViewBounds]
+-[MUXSDKAVPlayerViewControllerBinding .cxx_destruct]
+-[MUXSDKAVPlayerLayerBinding initWithName:software:andView:]
+-[MUXSDKAVPlayerLayerBinding getVideoBounds]
+-[MUXSDKAVPlayerLayerBinding getViewBounds]
+-[MUXSDKAVPlayerLayerBinding .cxx_destruct]
+___block_descriptor_40_e8_32w_e15_v32?0{?=qiIq}8l
+_OBJC_SELECTOR_REFERENCES_.31
+_MUXSDKAVPlayerRateObservationContext
+_OBJC_SELECTOR_REFERENCES_.39
+_MUXSDKAVPlayerStatusObservationContext
+_MUXSDKAVPlayerCurrentItemObservationContext
+_OBJC_CLASSLIST_REFERENCES_$_.44
+_OBJC_SELECTOR_REFERENCES_.46
+_OBJC_SELECTOR_REFERENCES_.48
+_OBJC_SELECTOR_REFERENCES_.50
+_OBJC_SELECTOR_REFERENCES_.52
+_OBJC_SELECTOR_REFERENCES_.54
+_OBJC_CLASSLIST_REFERENCES_$_.55
+_OBJC_SELECTOR_REFERENCES_.57
+_OBJC_SELECTOR_REFERENCES_.59
+_OBJC_SELECTOR_REFERENCES_.61
+_OBJC_SELECTOR_REFERENCES_.63
+_OBJC_SELECTOR_REFERENCES_.65
+_OBJC_SELECTOR_REFERENCES_.67
+_OBJC_SELECTOR_REFERENCES_.69
+___block_descriptor_48_e8_32s40s_e5_v8?0l
+_OBJC_SELECTOR_REFERENCES_.72
+_OBJC_SELECTOR_REFERENCES_.74
+_OBJC_CLASSLIST_REFERENCES_$_.75
+_OBJC_SELECTOR_REFERENCES_.77
+_OBJC_SELECTOR_REFERENCES_.79
+_OBJC_SELECTOR_REFERENCES_.81
+_OBJC_SELECTOR_REFERENCES_.83
+_OBJC_SELECTOR_REFERENCES_.85
+_OBJC_SELECTOR_REFERENCES_.87
+_OBJC_SELECTOR_REFERENCES_.89
+_OBJC_SELECTOR_REFERENCES_.91
+_OBJC_CLASSLIST_REFERENCES_$_.94
+_OBJC_SELECTOR_REFERENCES_.96
+_OBJC_SELECTOR_REFERENCES_.98
+_OBJC_SELECTOR_REFERENCES_.100
+_OBJC_SELECTOR_REFERENCES_.102
+_OBJC_CLASSLIST_REFERENCES_$_.103
+_OBJC_SELECTOR_REFERENCES_.105
+_OBJC_SELECTOR_REFERENCES_.107
+_OBJC_CLASSLIST_REFERENCES_$_.108
+_OBJC_SELECTOR_REFERENCES_.112
+_OBJC_SELECTOR_REFERENCES_.114
+_OBJC_SELECTOR_REFERENCES_.116
+_OBJC_SELECTOR_REFERENCES_.118
+_OBJC_SELECTOR_REFERENCES_.120
+_OBJC_SELECTOR_REFERENCES_.122
+_OBJC_SELECTOR_REFERENCES_.124
+_OBJC_SELECTOR_REFERENCES_.126
+_OBJC_SELECTOR_REFERENCES_.128
+_OBJC_SELECTOR_REFERENCES_.130
+_OBJC_SELECTOR_REFERENCES_.132
+_OBJC_SELECTOR_REFERENCES_.134
+_OBJC_SELECTOR_REFERENCES_.136
+_OBJC_SELECTOR_REFERENCES_.138
+_OBJC_SELECTOR_REFERENCES_.140
+_OBJC_SELECTOR_REFERENCES_.142
+_OBJC_SELECTOR_REFERENCES_.144
+_OBJC_SELECTOR_REFERENCES_.146
+_OBJC_SELECTOR_REFERENCES_.148
+_OBJC_SELECTOR_REFERENCES_.150
+_OBJC_SELECTOR_REFERENCES_.152
+_OBJC_SELECTOR_REFERENCES_.154
+_OBJC_SELECTOR_REFERENCES_.156
+_OBJC_SELECTOR_REFERENCES_.158
+_OBJC_SELECTOR_REFERENCES_.160
+_OBJC_SELECTOR_REFERENCES_.162
+_OBJC_SELECTOR_REFERENCES_.164
+_OBJC_SELECTOR_REFERENCES_.166
+_OBJC_SELECTOR_REFERENCES_.168
+_OBJC_SELECTOR_REFERENCES_.170
+_OBJC_SELECTOR_REFERENCES_.172
+_OBJC_SELECTOR_REFERENCES_.174
+_OBJC_SELECTOR_REFERENCES_.176
+_OBJC_SELECTOR_REFERENCES_.180
+_OBJC_SELECTOR_REFERENCES_.182
+_OBJC_SELECTOR_REFERENCES_.188
+_OBJC_SELECTOR_REFERENCES_.190
+_OBJC_SELECTOR_REFERENCES_.192
+_OBJC_SELECTOR_REFERENCES_.194
+_OBJC_SELECTOR_REFERENCES_.196
+_OBJC_SELECTOR_REFERENCES_.198
+_OBJC_SELECTOR_REFERENCES_.200
+_OBJC_SELECTOR_REFERENCES_.202
+_OBJC_CLASSLIST_REFERENCES_$_.203
+_OBJC_SELECTOR_REFERENCES_.205
+_OBJC_SELECTOR_REFERENCES_.207
+_OBJC_SELECTOR_REFERENCES_.209
+_OBJC_CLASSLIST_REFERENCES_$_.210
+_OBJC_SELECTOR_REFERENCES_.212
+_OBJC_SELECTOR_REFERENCES_.214
+_OBJC_SELECTOR_REFERENCES_.216
+_OBJC_SELECTOR_REFERENCES_.218
+_OBJC_SELECTOR_REFERENCES_.220
+_OBJC_SELECTOR_REFERENCES_.222
+_OBJC_SELECTOR_REFERENCES_.224
+_OBJC_SELECTOR_REFERENCES_.226
+_OBJC_SELECTOR_REFERENCES_.228
+_OBJC_SELECTOR_REFERENCES_.232
+_OBJC_SELECTOR_REFERENCES_.236
+_OBJC_SELECTOR_REFERENCES_.238
+_OBJC_CLASSLIST_REFERENCES_$_.239
+_OBJC_SELECTOR_REFERENCES_.241
+_OBJC_SELECTOR_REFERENCES_.243
+_OBJC_SELECTOR_REFERENCES_.245
+_OBJC_CLASSLIST_REFERENCES_$_.246
+_OBJC_SELECTOR_REFERENCES_.248
+_OBJC_SELECTOR_REFERENCES_.250
+_OBJC_SELECTOR_REFERENCES_.254
+_OBJC_SELECTOR_REFERENCES_.258
+_OBJC_SELECTOR_REFERENCES_.260
+_OBJC_SELECTOR_REFERENCES_.262
+_OBJC_SELECTOR_REFERENCES_.264
+_OBJC_SELECTOR_REFERENCES_.266
+_OBJC_CLASSLIST_REFERENCES_$_.267
+_OBJC_SELECTOR_REFERENCES_.269
+_OBJC_SELECTOR_REFERENCES_.271
+_OBJC_CLASSLIST_REFERENCES_$_.272
+_OBJC_SELECTOR_REFERENCES_.274
+_OBJC_SELECTOR_REFERENCES_.276
+_OBJC_SELECTOR_REFERENCES_.278
+_OBJC_CLASSLIST_REFERENCES_$_.279
+_OBJC_SELECTOR_REFERENCES_.281
+_OBJC_SELECTOR_REFERENCES_.283
+_OBJC_SELECTOR_REFERENCES_.285
+_OBJC_SELECTOR_REFERENCES_.287
+_OBJC_SELECTOR_REFERENCES_.289
+_OBJC_SELECTOR_REFERENCES_.291
+_OBJC_SELECTOR_REFERENCES_.293
+_OBJC_CLASSLIST_REFERENCES_$_.294
+_OBJC_SELECTOR_REFERENCES_.296
+_OBJC_SELECTOR_REFERENCES_.298
+_OBJC_SELECTOR_REFERENCES_.300
+_OBJC_CLASSLIST_REFERENCES_$_.301
+_OBJC_SELECTOR_REFERENCES_.303
+_OBJC_SELECTOR_REFERENCES_.305
+_OBJC_SELECTOR_REFERENCES_.309
+_OBJC_SELECTOR_REFERENCES_.311
+_OBJC_SELECTOR_REFERENCES_.313
+_OBJC_SELECTOR_REFERENCES_.315
+_OBJC_SELECTOR_REFERENCES_.317
+_OBJC_SELECTOR_REFERENCES_.321
+_OBJC_SELECTOR_REFERENCES_.327
+_OBJC_SELECTOR_REFERENCES_.329
+_OBJC_SELECTOR_REFERENCES_.331
+_OBJC_SELECTOR_REFERENCES_.333
+_OBJC_CLASSLIST_REFERENCES_$_.334
+_OBJC_SELECTOR_REFERENCES_.338
+_OBJC_SELECTOR_REFERENCES_.340
+_OBJC_SELECTOR_REFERENCES_.342
+_OBJC_CLASSLIST_REFERENCES_$_.343
+_OBJC_SELECTOR_REFERENCES_.345
+_OBJC_SELECTOR_REFERENCES_.347
+_OBJC_SELECTOR_REFERENCES_.349
+_OBJC_SELECTOR_REFERENCES_.361
+_OBJC_SELECTOR_REFERENCES_.363
+_OBJC_SELECTOR_REFERENCES_.365
+_OBJC_SELECTOR_REFERENCES_.367
+_OBJC_CLASSLIST_REFERENCES_$_.368
+_OBJC_SELECTOR_REFERENCES_.370
+_OBJC_CLASSLIST_REFERENCES_$_.371
+_OBJC_SELECTOR_REFERENCES_.373
+_OBJC_SELECTOR_REFERENCES_.375
+_OBJC_CLASSLIST_REFERENCES_$_.376
+_OBJC_CLASSLIST_REFERENCES_$_.377
+_OBJC_CLASSLIST_REFERENCES_$_.378
+_OBJC_CLASSLIST_REFERENCES_$_.379
+_OBJC_CLASSLIST_REFERENCES_$_.380
+_OBJC_CLASSLIST_REFERENCES_$_.381
+_OBJC_CLASSLIST_REFERENCES_$_.382
+_OBJC_CLASSLIST_REFERENCES_$_.383
+_OBJC_SELECTOR_REFERENCES_.385
+_OBJC_SELECTOR_REFERENCES_.387
+_OBJC_CLASSLIST_REFERENCES_$_.388
+_OBJC_SELECTOR_REFERENCES_.390
+_OBJC_CLASSLIST_REFERENCES_$_.391
+_OBJC_SELECTOR_REFERENCES_.393
+_OBJC_CLASSLIST_REFERENCES_$_.394
+_OBJC_SELECTOR_REFERENCES_.396
+_OBJC_CLASSLIST_REFERENCES_$_.397
+_OBJC_SELECTOR_REFERENCES_.399
+_OBJC_CLASSLIST_REFERENCES_$_.400
+_OBJC_SELECTOR_REFERENCES_.420
+_OBJC_SELECTOR_REFERENCES_.422
+_OBJC_SELECTOR_REFERENCES_.424
+_OBJC_SELECTOR_REFERENCES_.426
+_OBJC_SELECTOR_REFERENCES_.428
+__OBJC_METACLASS_RO_$_MUXSDKPlayerBinding
+__OBJC_$_INSTANCE_METHODS_MUXSDKPlayerBinding
+_OBJC_IVAR_$_MUXSDKPlayerBinding._name
+_OBJC_IVAR_$_MUXSDKPlayerBinding._software
+_OBJC_IVAR_$_MUXSDKPlayerBinding._player
+_OBJC_IVAR_$_MUXSDKPlayerBinding._playerItem
+_OBJC_IVAR_$_MUXSDKPlayerBinding._timeObserver
+_OBJC_IVAR_$_MUXSDKPlayerBinding._state
+_OBJC_IVAR_$_MUXSDKPlayerBinding._videoSize
+_OBJC_IVAR_$_MUXSDKPlayerBinding._videoDuration
+_OBJC_IVAR_$_MUXSDKPlayerBinding._videoIsLive
+_OBJC_IVAR_$_MUXSDKPlayerBinding._videoURL
+_OBJC_IVAR_$_MUXSDKPlayerBinding._lastTimeUpdate
+_OBJC_IVAR_$_MUXSDKPlayerBinding._timeUpdateTimer
+_OBJC_IVAR_$_MUXSDKPlayerBinding._lastPlayheadTimeUpdated
+_OBJC_IVAR_$_MUXSDKPlayerBinding._lastPlayheadTimeMs
+_OBJC_IVAR_$_MUXSDKPlayerBinding._seeking
+_OBJC_IVAR_$_MUXSDKPlayerBinding._started
+_OBJC_IVAR_$_MUXSDKPlayerBinding._shouldHandleAVQueuePlayerItem
+_OBJC_IVAR_$_MUXSDKPlayerBinding._lastTransferEventCount
+_OBJC_IVAR_$_MUXSDKPlayerBinding._lastTransferDuration
+_OBJC_IVAR_$_MUXSDKPlayerBinding._lastTransferredBytes
+_OBJC_IVAR_$_MUXSDKPlayerBinding._orientation
+_OBJC_IVAR_$_MUXSDKPlayerBinding._lastAdvertisedBitrate
+_OBJC_IVAR_$_MUXSDKPlayerBinding._lastDispatchedAdvertisedBitrate
+_OBJC_IVAR_$_MUXSDKPlayerBinding._sourceDimensionsHaveChanged
+_OBJC_IVAR_$_MUXSDKPlayerBinding._lastDispatchedVideoSize
+_OBJC_IVAR_$_MUXSDKPlayerBinding._automaticErrorTracking
+_OBJC_IVAR_$_MUXSDKPlayerBinding._playDispatchDelegate
+__OBJC_$_INSTANCE_VARIABLES_MUXSDKPlayerBinding
+__OBJC_$_PROP_LIST_MUXSDKPlayerBinding
+__OBJC_CLASS_RO_$_MUXSDKPlayerBinding
+_OBJC_SELECTOR_REFERENCES_.504
+_OBJC_IVAR_$_MUXSDKAVPlayerViewControllerBinding._viewController
+_OBJC_SELECTOR_REFERENCES_.506
+_OBJC_SELECTOR_REFERENCES_.508
+__OBJC_METACLASS_RO_$_MUXSDKAVPlayerViewControllerBinding
+__OBJC_$_INSTANCE_METHODS_MUXSDKAVPlayerViewControllerBinding
+__OBJC_$_INSTANCE_VARIABLES_MUXSDKAVPlayerViewControllerBinding
+__OBJC_CLASS_RO_$_MUXSDKAVPlayerViewControllerBinding
+_OBJC_IVAR_$_MUXSDKAVPlayerLayerBinding._view
+_OBJC_SELECTOR_REFERENCES_.517
+__OBJC_METACLASS_RO_$_MUXSDKAVPlayerLayerBinding
+__OBJC_$_INSTANCE_METHODS_MUXSDKAVPlayerLayerBinding
+__OBJC_$_INSTANCE_VARIABLES_MUXSDKAVPlayerLayerBinding
+__OBJC_CLASS_RO_$_MUXSDKAVPlayerLayerBinding
+/Users/dylanjhaveri/code/@muxinc/mux-stats-sdk-avplayer/MUXSDKStats/MUXSDKStats/MUXSDKPlayerBinding.m
+MUXSDKStats/MUXSDKPlayerBinding.m
+MUXSDKStats/MUXSDKPlayerBinding.h
+__CGSizeEqualToSize
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGGeometry.h
+__destroy_helper_block_e8_32s40s
+__copy_helper_block_e8_32s40s
+__44-[MUXSDKPlayerBinding handleAVPlayerAccess:]_block_invoke
+__destroy_helper_block_e8_32w
+__copy_helper_block_e8_32w
+__38-[MUXSDKPlayerBinding attachAVPlayer:]_block_invoke
++[MUXSDKStats initSDK]
++[MUXSDKStats monitorAVPlayerViewController:withPlayerName:playerData:videoData:]
++[MUXSDKStats monitorAVPlayerViewController:withPlayerName:playerData:videoData:automaticErrorTracking:]
++[MUXSDKStats updateAVPlayerViewController:withPlayerName:]
++[MUXSDKStats monitorAVPlayerLayer:withPlayerName:playerData:videoData:automaticErrorTracking:]
++[MUXSDKStats monitorAVPlayerLayer:withPlayerName:playerData:videoData:]
++[MUXSDKStats updateAVPlayerLayer:withPlayerName:]
++[MUXSDKStats destroyPlayer:]
++[MUXSDKStats videoChangeForPlayer:withPlayerData:withVideoData:]
++[MUXSDKStats videoChangeForPlayer:withVideoData:]
++[MUXSDKStats programChangeForPlayer:withVideoData:]
++[MUXSDKStats updateCustomerDataForPlayer:withPlayerData:withVideoData:]
++[MUXSDKStats orientationChangeForPlayer:withOrientation:]
++[MUXSDKStats dispatchError:withMessage:forPlayer:]
+__bindings
+__viewControllers
+__customerPlayerDataStore
+_OBJC_CLASSLIST_REFERENCES_$_.3
+__customerVideoDataStore
+_OBJC_CLASSLIST_REFERENCES_$_.4
+__playerBindingManager
+_OBJC_CLASSLIST_REFERENCES_$_.5
+_OBJC_SELECTOR_REFERENCES_.7
+_OBJC_SELECTOR_REFERENCES_.9
+_OBJC_SELECTOR_REFERENCES_.11
+_OBJC_CLASSLIST_REFERENCES_$_.12
+_OBJC_CLASSLIST_REFERENCES_$_.13
+_OBJC_SELECTOR_REFERENCES_.15
+_OBJC_SELECTOR_REFERENCES_.17
+_OBJC_SELECTOR_REFERENCES_.19
+_OBJC_SELECTOR_REFERENCES_.21
+_OBJC_CLASSLIST_REFERENCES_$_.22
+_OBJC_CLASSLIST_REFERENCES_$_.23
+_OBJC_SELECTOR_REFERENCES_.25
+_OBJC_SELECTOR_REFERENCES_.27
+_OBJC_SELECTOR_REFERENCES_.29
+_OBJC_CLASSLIST_REFERENCES_$_.36
+_OBJC_SELECTOR_REFERENCES_.70
+_OBJC_SELECTOR_REFERENCES_.76
+_OBJC_CLASSLIST_REFERENCES_$_.77
+_OBJC_CLASSLIST_REFERENCES_$_.82
+_OBJC_SELECTOR_REFERENCES_.84
+_OBJC_SELECTOR_REFERENCES_.86
+_OBJC_SELECTOR_REFERENCES_.88
+_OBJC_SELECTOR_REFERENCES_.90
+_OBJC_SELECTOR_REFERENCES_.92
+_OBJC_SELECTOR_REFERENCES_.94
+_OBJC_CLASSLIST_REFERENCES_$_.95
+_OBJC_SELECTOR_REFERENCES_.97
+_OBJC_SELECTOR_REFERENCES_.99
+_OBJC_SELECTOR_REFERENCES_.101
+_OBJC_SELECTOR_REFERENCES_.103
+_OBJC_SELECTOR_REFERENCES_.109
+_OBJC_SELECTOR_REFERENCES_.111
+_OBJC_SELECTOR_REFERENCES_.115
+_OBJC_CLASSLIST_REFERENCES_$_.120
+_OBJC_CLASSLIST_REFERENCES_$_.139
+_OBJC_SELECTOR_REFERENCES_.141
+_OBJC_SELECTOR_REFERENCES_.143
+_OBJC_SELECTOR_REFERENCES_.145
+_OBJC_SELECTOR_REFERENCES_.147
+_OBJC_SELECTOR_REFERENCES_.149
+_OBJC_SELECTOR_REFERENCES_.151
+_OBJC_SELECTOR_REFERENCES_.153
+_OBJC_SELECTOR_REFERENCES_.155
+__OBJC_$_CLASS_METHODS_MUXSDKStats
+__OBJC_METACLASS_RO_$_MUXSDKStats
+__OBJC_CLASS_RO_$_MUXSDKStats
+/Users/dylanjhaveri/code/@muxinc/mux-stats-sdk-avplayer/MUXSDKStats/MUXSDKStats/MUXSDKStats.m
+MUXSDKStats/MUXSDKStats.m
+-[NSNumber(MUXSDK) doubleValueIsEqual:]
+__OBJC_$_CATEGORY_INSTANCE_METHODS_NSNumber_$_MUXSDK
+__OBJC_$_CATEGORY_NSNumber_$_MUXSDK
+/Users/dylanjhaveri/code/@muxinc/mux-stats-sdk-avplayer/MUXSDKStats/MUXSDKStats/NSNumber+MUXSDK.m
+MUXSDKStats/NSNumber+MUXSDK.m
+__OBJC_METACLASS_RO_$_PodsDummy_Pods_MUXSDKStats
+__OBJC_CLASS_RO_$_PodsDummy_Pods_MUXSDKStats
+/Users/dylanjhaveri/code/@muxinc/mux-stats-sdk-avplayer/MUXSDKStats/Pods/Target Support Files/Pods-MUXSDKStats/Pods-MUXSDKStats-dummy.m
+/Users/dylanjhaveri/code/@muxinc/mux-stats-sdk-avplayer/MUXSDKStats/Pods
